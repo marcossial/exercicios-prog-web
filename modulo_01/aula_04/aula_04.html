@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula Fatec</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <fieldset id="dados-pessoais">
+            <legend>Dados Pessoais</legend>
+            <label>
+                Nome completo:
+                <input type="text" name="nome" required>
+            </label>
+            <label>
+                Email pessoal:
+                <input type="email" name="email" placeholder="aluno@mail.com" required>
+            </label>
+            <label>
+                Data de nascimento:
+                <input type="date" name="dn" required>
+            </label>
+            <label>
+                CPF:
+                <input type="text" name="cpf"
+                pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                title="Formato: 000.000.000-00" required>
+            </label>
+        </fieldset>
+        <fieldset id="dados-academicos">
+            <legend>Dados Acadêmicos</legend>
+            <label>
+                Cursos:
+                <select name="cursos" id="cursos">
+                    <option value="ads">Analise e Desenvolvimento de Sistemas</option>
+                    <option value="comex">Comercio Exterior</option>
+                    <option value="agro">Agronegocio</option>
+                </select>
+            </label>
+            <label>
+                Periodo:
+            </label>
+            <label>
+                <input type="radio" name="periodo" value="manha">
+                manhã
+            </label>
+            <label>
+                <input type="radio" name="periodo" value="noite">
+                noite
+            </label>
+            <label>
+                Já programou antes?
+                <input type="checkbox" name="exp-prog" value="sim">
+            </label>
+        </fieldset>
+        <section>
+            Observações:
+            <textarea
+                id="obs" 
+                name="observações"
+                row="10"
+                cols="50"
+                placeholder="...Escreva aqui..."
+            ></textarea>
+        </section>
+        <button type="submit">Enviar Matrícula</button>
+    </form>
+</body>
+</html>
