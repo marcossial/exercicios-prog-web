@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-height: 70px;
+    --sidebar-width: 250px;
+
+    --cor-primaria: #8a2be2;
+    --cor-secundaria: #ff00ff;
+    --cor-destaque: #00ff9f;
+    --cor-texto: #e0e0e0;
+    --cor-card-bg: #11141d;
+    --cor-fundo: #05070a;
+    --fonte-principal: 'Miranda Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main { 
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    margin-top: var(--nav-height);
+    background-color: var(--cor-fundo);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    background-color: var(--cor-primaria);
+}
+
+.logo i{
+    font-size: 2rem;
+    color: var(--cor-destaque);
+}
+
+.navbar .pages {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar .pages li:hover a {
+    color: var(--cor-destaque);
+}
+
+.navbar li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+
+    transition: all 0.3s ease;
+}
+
+.sidebar {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    width: var(--sidebar-width);
+    height: calc(100% - var(--nav-height));
+    background-color: var(--cor-fundo);
+    padding: 20px;
+
+    display: flex;
+    flex: 01 0 250px;
+    flex-direction: column;
+    gap: 20px;
+
+    font-family: var(--fonte-principal);
+}
+
+.sidebar-title h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+.sidebar-description p {
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--cor-texto);
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.hero {
+    padding: 150px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../imgs/mars.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+    font-family: var(--fonte-principal);
+}
+
+.hero .hero-title h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--cor-texto);
+}
+
+.hero .hero-description p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #ccc;
+}
+
+.destinations {
+    padding: 50px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-family: var(--fonte-principal);
+}
+
+.destinations .destinations-title h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+.destinations .destinations-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.destinations .destinations-card {
+    flex: 1 1 auto;
+    padding: 50px;
+    height: 500px;
+    
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.destinations-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.mars{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../imgs/marscard.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.saturn{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../imgs/saturncard.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.europa{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../imgs/europacard.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.destinations .destinations-card h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: var(--cor-texto) 1px solid;
+    padding-bottom: 10px;
+    color: var(--cor-texto);
+}
+
+footer {
+    display: flex;
+    min-height: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo);
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials a i {
+    font-size: 1.8rem;
+    color: var(--cor-secundaria);
+}
+.socials a i:hover {
+    font-size: 1.8rem;
+    color: var(--cor-destaque);
+}
