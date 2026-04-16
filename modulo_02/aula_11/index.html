@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/176cf7605a.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio Pessoal</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about-me">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <h1>Marcos Vinicius Silva Almeida</h1>
+            <h2>Desenvolvedor de <span>Software</span></h2>
+        </section>
+        <section class="about-me" id="about-me">
+            <p>
+                Olá! Me chamo <strong>Marcos Vinicius</strong> e sou um desenvolvedor de software focado em construir soluções estruturadas, úteis e escaláveis.
+                Atualmente, dedico-me ao aprimoramento constante das minhas competências tanto em <em>backend</em> quanto em <em>frontend</em>, buscando o domínio de tecnologias como <strong>JavaScript</strong> e <strong>TypeScript</strong> para entregar projetos completos e versáteis. Meu objetivo é aplicar a lógica e a técnica para resolver problemas reais através de um código limpo e bem arquitetado.
+            </p>
+        </section>
+        <section class="projects" id="projects">
+            <div class="project-cards">
+                <div class="project-card">
+                    <div class="card-visuals">
+                        <img src="imgs/Home.png" alt="Bigger Bet Home">
+                        <img src="imgs/Play.png" alt="Bigger Bet Games">
+                        <img src="imgs/Info.png" alt="Bigger Bet Info">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h2>Bigger Bet</h2>
+                        <p>Aplicação Mobile voltada a conscientizar sobre o vicio em apostas.</p>
+                        <ul>
+                            <li>Flutter</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-visuals">
+                        <img src="imgs/sisval_home.png" alt="Sistema de Validade Home">
+                        <img src="imgs/sisval_notificacao.png" alt="Sistema de Validade Notificações">
+                        <img src="imgs/sisval_tvmode.png" alt="Sistema de Validade Modo TV">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h2>Sistema de Validade</h2>
+                        <p>Aplicação Desktop com o objetivo de gerenciar a validade de produtos em estoques de supermercados<p>
+                        <ul>
+                            <li>Python</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2>Habilidades</h2>
+            <div class="skill-cards">
+                <div class="skill-card">
+                    <img src="imgs/html5-svgrepo-com.svg" alt="HTML5">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/css-3-svgrepo-com.svg" alt="CSS3">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/node-svgrepo-com.svg" alt="Node.js">
+                    <h3>NODE.JS</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/javascript-svgrepo-com.svg" alt="JavaScript">
+                    <h3>JAVASCRIPT</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/typescript-svgrepo-com.svg" alt="TypeScript">
+                    <h3>TYPESCRIPT</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/express-svgrepo-com.svg" alt="Express.js">
+                    <h3>EXPRESS.JS</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/react-svgrepo-com.svg" alt="React">
+                    <h3>REACT</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/mongo-svgrepo-com.svg" alt="MongoDB">
+                    <h3>MONGODB</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/postgresql-svgrepo-com.svg" alt="PostgreSQL">
+                    <h3>POSTGRESQL</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="imgs/docker-logo-svgrepo-com.svg" alt="Docker">
+                    <h3>DOCKER</h3>
+                </div>
+            </div>
+        </section>
+        <section class="contact-forms">
+            <h2>Entre em contato</h2>
+            <form action="/enviar_email" id="contact">
+                <div class="form-group">
+                    <label>
+                        SEU EMAIL:
+                        <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                    </label>
+                    <label>
+                        MENSAGEM:
+                    </label>
+                    <textarea name="msg" id="msg"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/marcossial/" target="_blank" referrerpolicy="no-referrer">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/marcossial" target="_blank" referrerpolicy="no-referrer">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
