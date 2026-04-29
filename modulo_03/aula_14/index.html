@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        const arr = [
+            {
+                nome: "Leite",
+                preco: 5.9,
+                categoria: "Bebida"
+            },
+            {
+                nome: "Pão Francês",
+                preco: 0.5,
+                categoria: "Pão"
+            },
+            {
+                nome: "Bolacha Trakinas",
+                preco: 12.30,
+                categoria: "Biscoito"
+            },
+            {
+                nome: "Coca-cola",
+                preco: 7.5,
+                categoria: "Bebida"
+            },
+            {
+                nome: "Queijo",
+                preco: 39.79,
+                categoria: "Quejo"
+            },
+        ];
+
+        const container = document.querySelector(".container");
+
+        arr.forEach((p) => {
+            const element = document.createElement('div');
+            element.className = "element";
+            element.innerHTML = `
+                <h3>produto: ${p.nome}</h3>
+                <p>preço: ${p.preco}</p>
+                <p>categorias: ${p.categoria}</p>
+            `;
+                
+            container.append(element);
+        })
+    </script>
+</body>
+</html>
