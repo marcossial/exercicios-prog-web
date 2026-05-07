@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 15</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+    }
+    input {
+      font-family: inherit;
+    }
+  </style>
+</head>
+<body>
+  <!--Adicionar tarefas-->
+  <h3>Adicionar tarefa</h3>
+  <form id="taskForm">
+    <input type="text" placeholder="Tarefa" name="taskName" required>
+    <button type="submit" id="taskBtn">Criar Tarefa</button>
+  </form>
+  <br>
+
+  <!--Filtro de tarefas-->
+  <h3>Filtrar tarefas</h3>
+  <input type="text" id="filterTask">
+
+  <!--Lista de tarefas-->
+  <ul id="taskList"></ul>
+  <script src="script.js"></script>
+</body>
+</html>
