@@ -8,7 +8,7 @@ const resultadoRaiz = raizQuadradaArray(numeros);
 
 const conteudo = `Soma: ${resultadoSoma}\nRaiz: ${resultadoRaiz}`;
 
-console.log(conteudo);
+fs.writeFileSync('resultado.txt', conteudo);
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, 'text/html');
